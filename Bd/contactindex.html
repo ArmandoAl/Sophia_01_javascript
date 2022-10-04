@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataBase</title>
+    <style>
+        h1{ color: White;
+        font-size: 50px;
+        font-family: 'Courier New', Courier, monospaces;
+        z-index: 99;
+        background-color: transparent;
+        padding: 16px 14px;
+        text-align: center;
+        position: relative; }
+
+        h2{
+            color: rgb(141, 170, 177);
+            z-index: 99;
+            font-family:'Times New Roman', Times, serif
+        }
+
+        h3{
+            color: rgb(72, 102, 102);
+            z-index: 99;
+        }
+
+        body{ background-color: Black;
+       background-attachment:fixed ;
+       background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+       background-size:100%100%;}
+
+       a{text-decoration: none;
+        text-transform: uppercase;
+        padding: 12px 14px;
+        margin-top: 15px;
+        font-size:calc(0.5em + 1vw);
+        background-color: #2196f3;
+        z-index: 99;
+        border-radius: 30px;
+        width: calc(14%);
+        height: calc(2%);
+        text-align: center;
+        position: absolute;
+        text-decoration: none;
+        color: black;}
+        a:hover{ opacity : 0.5;
+        box-shadow: 0 0 40px #2196f3,  0 0 10px #2196f3, 0 0 30px #2196f3;}
+
+       input{
+           background-color: transparent;
+           color:beige;
+           margin: 20px;
+           width: calc(20%);
+           border: solid 1px;
+           border-radius: 5px;}
+       .inputp{
+           width: calc( 35%);
+           height:30px;}
+        .inputr{
+            width: calc(50%);}
+        .submit{
+            background-color: transparent;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .submit:hover{
+            color: gray;
+            box-shadow: 0 0 40px #2196f3,  0 0 10px #2196f3, 0 0 30px #2196f3;
+        }
+        img{
+         display: none;}
+        img:hover{ opacity : 0.5;
+          box-shadow: 0 0 40px #2196f3,  0 0 10px #2196f3, 0 0 30px #2196f3;}
+
+       #particles-js{ 
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: -1; }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+
+<h1>Armando Alvarado</h1>
+<h2>Jr Developer</h2>
+<h3>Gmail: alvaradoarmando301@gmail.com</h3>    
+<h3>Facebook: Armando Al</h3>
+    <center>
+        <h3></h3>
+        <form action="../Bd/contact/contact.php" method="POST">
+            <input type="text" placeholder="Nombre" name="Name" required><br>
+            <input class="inputp" type="text" placeholder="Correo" name="Gmail" required><br>
+            <input class="inputr" type="text" placeholder="Mensaje" name="Coment" required><br>
+             <button class="submit" type="submit" name="Add">Agregar</button><br><br>
+        </form>
+    </center>
+<center><a href="../IndexP.html">Regresar</a></center>
+</body>
+</html>

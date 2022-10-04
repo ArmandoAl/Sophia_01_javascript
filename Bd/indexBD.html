@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataBase</title>
+    <style>
+        h1{ color: White;
+        font-size: 50px;
+        font-family: 'Courier New', Courier, monospaces;
+        z-index: 99;
+        background-color: transparent;
+        padding: 16px 14px;
+        text-align: center;
+        position: relative; }
+
+        body{ background-color: Black;
+       background-attachment:fixed ;
+       background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+       background-size:100%100%;}
+
+       /* a{text-decoration: none;
+        text-transform: uppercase;
+        padding: 12px 14px;
+        margin: 25vh;
+        font-size:calc(0.5em + 1vw);
+        background-color: #2196f3;
+        z-index: 99;
+        border-radius: 30px;
+        width: calc(14%);
+        height: calc(2%);
+        text-align: center;
+        position: absolute;
+        text-decoration: none;
+        color: black;}
+        a:hover{ opacity : 0.5;
+        box-shadow: 0 0 40px #2196f3,  0 0 10px #2196f3, 0 0 30px #2196f3;} */
+
+       input{
+           background-color: transparent;
+           color:beige;
+           margin: 20px;
+           width: calc(20%);
+           height:30px;
+           border: solid 1px;}
+       .inputp{
+           width: calc( 30%);
+           height:50px;}
+        .inputr{
+            width: calc(50%);
+            height: 70px;}
+        .submit{
+            background-color: transparent;
+            color: white;
+            border-radius: 30px;
+        }
+        .submit:hover{
+            color: gray;
+            box-shadow: 0 0 40px #2196f3,  0 0 10px #2196f3, 0 0 30px #2196f3;
+        }
+        img{
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          position: relative;
+        }
+        img:hover{ opacity : 0.5;
+          box-shadow: 0 0 40px #2196f3,  0 0 10px #2196f3, 0 0 30px #2196f3;}
+
+       #particles-js{ 
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: -1; }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+
+<h1>Base de datos</h1>    
+    <center>
+        <form action="../Bd/database.php" method="POST">
+            <input type="text" placeholder="Nombre" name="Name" required><br>
+            <input class="inputp" type="text" placeholder="Pregunta" name="Ask" required><br>
+            <input class="inputr" type="text" placeholder="Respuesta" name="Answer" required><br>
+             <button class="submit" type="submit" name="Add">Agregar</button><br><br>
+        </form>
+    </center>
+<center><a href="../../index.html"><img src="../HomeIcon.png"></a></center>
+</body>
+</html>
